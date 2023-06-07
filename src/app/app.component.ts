@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'calculadora';
+
+  result: number = 0;
+  x: string = 'Calculator App';
+
+  recieveEvent(e:any){
+    this.result = e;
+  }
+
 }
